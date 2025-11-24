@@ -1,0 +1,269 @@
+/* SILENTIUM Transcript Site Styles */
+
+:root {
+    --bg-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --accent-color: #8b0000;
+    --link-color: #a0a0a0;
+    --border-color: #333;
+    --header-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #0f0f0f;
+    padding: 40px;
+    border: 1px solid var(--border-color);
+}
+
+/* Header */
+header {
+    text-align: center;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: var(--header-color);
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-style: italic;
+    color: var(--link-color);
+    font-size: 0.9em;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+nav a {
+    color: var(--link-color);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Main Content */
+main {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: var(--header-color);
+    margin: 30px 0 20px 0;
+    font-size: 1.8em;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: var(--header-color);
+    margin: 20px 0 10px 0;
+    font-size: 1.3em;
+}
+
+/* Intro Section */
+.intro {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-left: 3px solid var(--accent-color);
+    margin-bottom: 30px;
+}
+
+.warning {
+    color: var(--accent-color);
+    margin-top: 10px;
+}
+
+/* Episodes */
+.episode {
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    transition: border-color 0.3s;
+}
+
+.episode:hover {
+    border-color: var(--accent-color);
+}
+
+.episode h3 a {
+    color: var(--header-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.episode h3 a:hover {
+    color: var(--accent-color);
+}
+
+.episode-meta {
+    font-size: 0.9em;
+    color: var(--link-color);
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.episode-summary {
+    margin-top: 10px;
+}
+
+/* Transcript Page Specific */
+.transcript-header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-left: 3px solid var(--accent-color);
+    margin-bottom: 30px;
+}
+
+.case-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.transcript-body {
+    line-height: 1.8;
+}
+
+.transcript-body p {
+    margin-bottom: 15px;
+}
+
+.speaker {
+    font-weight: bold;
+    color: var(--header-color);
+}
+
+.tongue {
+    color: var(--accent-color);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.note {
+    font-style: italic;
+    color: var(--link-color);
+    font-size: 0.95em;
+}
+
+.sound-effect {
+    font-style: italic;
+    color: #666;
+}
+
+/* Links Section */
+.links ul {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.links li {
+    margin: 8px 0;
+}
+
+.links a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: var(--accent-color);
+}
+
+/* Lexicon */
+.lexicon-entry {
+    background-color: #1a1a1a;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 3px solid var(--accent-color);
+}
+
+.lexicon-word {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--header-color);
+}
+
+.lexicon-pronunciation {
+    font-style: italic;
+    color: var(--link-color);
+    margin: 5px 0;
+}
+
+.lexicon-tier {
+    color: var(--accent-color);
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid var(--border-color);
+    color: var(--link-color);
+    font-size: 0.9em;
+}
+
+footer a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--accent-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+    
+    .case-info {
+        grid-template-columns: 1fr;
+    }
+    
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
