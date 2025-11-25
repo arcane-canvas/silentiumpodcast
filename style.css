@@ -84,19 +84,19 @@ nav a:hover {
 }
 
 .listen-button {
-    background-color: var(--accent-color);
-    color: var(--header-color);
-    padding: 8px 20px;
-    font-size: 1.1em;
+    background: none;
     border: none;
-    cursor: pointer;
+    color: var(--link-color);
+    padding: 0;
+    margin: 0 15px;
+    font-size: 1.1em;
     font-family: 'Georgia', 'Times New Roman', serif;
-    transition: background-color 0.3s;
-    border-radius: 3px;
+    cursor: pointer;
+    transition: color 0.3s;
 }
 
 .listen-button:hover {
-    background-color: #a00000;
+    color: var(--accent-color);
 }
 
 .dropdown-content {
@@ -105,9 +105,10 @@ nav a:hover {
     background-color: #1a1a1a;
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-    z-index: 1;
+    z-index: 1000;
     border: 1px solid var(--border-color);
-    margin-top: 5px;
+    margin-top: 8px;
+    left: 0;
 }
 
 .dropdown-content a {
@@ -116,9 +117,10 @@ nav a:hover {
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     transition: background-color 0.3s;
     margin: 0;
+    font-size: 0.95em;
 }
 
 .dropdown-content a:hover {
@@ -127,9 +129,10 @@ nav a:hover {
 }
 
 .dropdown-content img {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     object-fit: contain;
+    flex-shrink: 0;
 }
 
 .listen-dropdown:hover .dropdown-content {
