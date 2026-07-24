@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arcane-canvas.github.io/silentiumpodcast/sitemap.xml
